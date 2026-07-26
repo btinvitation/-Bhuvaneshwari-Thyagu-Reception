@@ -84,3 +84,30 @@ musicBtn.addEventListener("click", () => {
     alert("Background music will be added in the next version.");
 
 });
+// Envelope Opening Animation
+
+const envelope = document.querySelector(".envelope");
+
+if (envelope) {
+
+    envelope.addEventListener("click", () => {
+
+        gsap.to("#landing", {
+            opacity: 0,
+            scale: 1.1,
+            duration: 1,
+            ease: "power2.inOut",
+            onComplete: () => {
+                document.getElementById("landing").style.display = "none";
+
+                gsap.from(".photo-section", {
+                    opacity: 0,
+                    y: 100,
+                    duration: 1
+                });
+            }
+        });
+
+    });
+
+}
