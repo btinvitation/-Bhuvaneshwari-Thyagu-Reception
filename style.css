@@ -822,3 +822,50 @@ window.onload = ()=>{
     }
 
 }
+/* ==========================
+   PREMIUM GOLD FRAME
+========================== */
+
+
+.invitation-card{
+
+    position:relative;
+
+}
+
+
+.invitation-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:15px;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    pointer-events:none;
+
+}
+
+
+
+.invitation-card::after{
+
+    content:"✦";
+
+    position:absolute;
+
+    top:-25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:45px;
+
+    color:#d4af37;
+
+}
