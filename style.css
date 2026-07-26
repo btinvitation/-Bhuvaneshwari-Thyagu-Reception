@@ -869,3 +869,111 @@ window.onload = ()=>{
     color:#d4af37;
 
 }
+/* ==========================
+   STORYBOOK EFFECT
+========================== */
+
+
+.story{
+
+    background:#fff0d9;
+    perspective:1200px;
+
+}
+
+
+.storybook{
+
+    max-width:800px;
+    margin:auto;
+
+    display:flex;
+
+    transform-style:preserve-3d;
+
+}
+
+
+.page{
+
+    width:50%;
+
+    min-height:300px;
+
+    background:#fffaf0;
+
+    padding:40px;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.left-page{
+
+    border-radius:
+    20px 0 0 20px;
+
+}
+
+
+.right-page{
+
+    border-radius:
+    0 20px 20px 0;
+
+}
+
+
+.page h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:55px;
+
+    color:#9b1c31;
+
+}
+
+
+.page p{
+
+    line-height:2;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.storybook{
+
+    flex-direction:column;
+
+}
+
+
+.page{
+
+    width:100%;
+
+}
+
+
+.left-page,
+.right-page{
+
+    border-radius:20px;
+
+}
+
+}
