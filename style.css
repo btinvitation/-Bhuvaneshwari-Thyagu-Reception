@@ -1095,3 +1095,111 @@ window.onload = ()=>{
     }
 
 }
+/* ==========================
+   FLORAL CORNER DECORATIONS
+========================== */
+
+.corner-flower{
+
+    position:fixed;
+
+    font-size:45px;
+
+    z-index:20;
+
+    animation:floatFlower 4s ease-in-out infinite;
+
+}
+
+
+.top-left{
+
+    top:15px;
+    left:15px;
+
+}
+
+
+.top-right{
+
+    top:15px;
+    right:15px;
+
+}
+
+
+.bottom-left{
+
+    bottom:15px;
+    left:15px;
+
+}
+
+
+.bottom-right{
+
+    bottom:15px;
+    right:15px;
+
+}
+
+
+@keyframes floatFlower{
+
+    50%{
+
+        transform:
+        translateY(-10px)
+        rotate(10deg);
+
+    }
+
+}
+
+
+/* ==========================
+   FINAL MOBILE POLISH
+========================== */
+
+
+@media(max-width:600px){
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+
+    .names h1{
+
+        font-size:55px;
+
+    }
+
+
+    .invitation-card{
+
+        margin:15px;
+
+        padding:35px 20px;
+
+    }
+
+
+    .corner-flower{
+
+        font-size:30px;
+
+    }
+
+
+    .photo-card{
+
+        width:90%;
+
+        margin:auto;
+
+    }
+
+}
