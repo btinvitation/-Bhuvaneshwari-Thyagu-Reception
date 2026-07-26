@@ -1,7 +1,7 @@
- /*=====================================
-BHUVANESHWARI ❤️ THYAGU
-PREMIUM RECEPTION INVITATION
-=====================================*/
+/* =========================================
+   BHUVANESHWARI ❤️ THYAGU
+   LUXURY RECEPTION INVITATION
+========================================= */
 
 *{
 margin:0;
@@ -11,33 +11,53 @@ box-sizing:border-box;
 
 :root{
 
---gold:#d4af37;
---maroon:#6d1126;
---cream:#f9f5ef;
---dark:#111111;
+--maroon:#6A1025;
+--gold:#D4AF37;
+--cream:#FFF8F0;
 --white:#ffffff;
+--text:#444;
+--shadow:0 20px 45px rgba(0,0,0,.15);
 
 }
 
 html{
+
 scroll-behavior:smooth;
+
 }
 
 body{
 
 font-family:'Poppins',sans-serif;
-
 background:var(--cream);
-
-color:#333;
-
+color:var(--text);
 overflow-x:hidden;
 
 }
 
-/*=========================
+/* =========================================
+SECTION
+========================================= */
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:90px 20px;
+
+position:relative;
+
+}
+
+/* =========================================
 LOADER
-=========================*/
+========================================= */
 
 #loader{
 
@@ -49,7 +69,7 @@ left:0;
 width:100%;
 height:100%;
 
-background:#0f0f10;
+background:#0f0f0f;
 
 display:flex;
 
@@ -74,9 +94,9 @@ background:radial-gradient(circle,
 rgba(212,175,55,.25),
 transparent 70%);
 
-filter:blur(40px);
+animation:glow 6s infinite;
 
-animation:glow 5s infinite;
+filter:blur(40px);
 
 }
 
@@ -84,83 +104,73 @@ animation:glow 5s infinite;
 
 position:relative;
 
-z-index:2;
+z-index:5;
 
 text-align:center;
 
 color:white;
 
-padding:20px;
-
 }
 
-.loader-subtitle{
-
-letter-spacing:5px;
-
-text-transform:uppercase;
-
-font-size:14px;
-
-color:var(--gold);
-
-margin-bottom:25px;
-
-}
-
-.loader-name{
+.loader-content h4{
 
 font-family:'Cinzel',serif;
 
-font-size:46px;
+color:var(--gold);
 
-font-weight:600;
+letter-spacing:4px;
 
-margin:8px 0;
+margin-bottom:30px;
 
 }
 
-.loader-heart{
+.loader-content h1{
 
-font-size:34px;
+font-family:'Cinzel',serif;
+
+font-size:54px;
+
+font-weight:600;
+
+line-height:1.3;
+
+}
+
+.loader-content .heart{
+
+font-size:42px;
 
 color:var(--gold);
 
 margin:18px 0;
 
-animation:heartbeat 1.6s infinite;
+animation:pulse 2s infinite;
 
 }
 
-.loader-date{
+.loader-content p{
 
 margin-top:20px;
-
-font-size:18px;
 
 letter-spacing:2px;
 
 }
 
-.loader-button{
+#beginBtn{
 
-margin-top:35px;
+margin-top:45px;
 
-display:inline-block;
+padding:16px 38px;
 
-padding:12px 28px;
+background:transparent;
 
-border:1px solid var(--gold);
+border:2px solid var(--gold);
 
 color:var(--gold);
 
-border-radius:40px;
+border-radius:50px;
 
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-font-size:13px;
+font-size:16px;
 
 cursor:pointer;
 
@@ -168,659 +178,497 @@ transition:.4s;
 
 }
 
-.loader-button:hover{
+#beginBtn:hover{
 
 background:var(--gold);
 
 color:black;
 
-}
-
-/*=========================
-WEBSITE
-=========================*/
-
-#website{
-
-display:none;
+transform:translateY(-3px);
 
 }
 
-/*=========================
-COMMON SECTION
-=========================*/
-
-section{
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-flex-direction:column;
-
-padding:60px 20px;
-
-}
-
-/*=========================
-ANIMATIONS
-=========================*/
-
-@keyframes heartbeat{
-
-0%,100%{
-
-transform:scale(1);
-
-}
-
-50%{
-
-transform:scale(1.15);
-
-}
-
-}
-
-@keyframes glow{
-
-0%,100%{
-
-transform:scale(1);
-
-opacity:.7;
-
-}
-
-50%{
-
-transform:scale(1.15);
-
-opacity:1;
-
-}
-
-}
-/*=====================================
+/* =========================================
 LANDING
-=====================================*/
+========================================= */
 
 #landing{
 
-position:relative;
+background:linear-gradient(135deg,#faf7f0,#f1e6d5);
 
-background:linear-gradient(135deg,#faf6ef,#f0e3d0);
+display:none;
 
-overflow:hidden;
+flex-direction:column;
 
 }
-
-/* Gold Light */
 
 .gold-light{
 
 position:absolute;
 
-width:550px;
-
-height:550px;
+width:650px;
+height:650px;
 
 border-radius:50%;
 
 background:radial-gradient(circle,
-rgba(212,175,55,.28),
+rgba(212,175,55,.18),
 transparent 70%);
 
-filter:blur(40px);
+filter:blur(45px);
 
-animation:goldGlow 6s ease-in-out infinite;
-
-}
-
-/* Decorative Flowers */
-
-.flower-left,
-.flower-right{
-
-position:absolute;
-
-width:220px;
-
-height:220px;
-
-opacity:.15;
-
-background:radial-gradient(circle,var(--gold),transparent 70%);
+animation:glow 8s infinite;
 
 }
+/* =================================
+   Bhuvaneshwari ❤️ Thyagu Reception
+   Style Sheet
+================================= */
 
-.flower-left{
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap');
 
-top:-60px;
-left:-60px;
-
-border-radius:50%;
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.flower-right{
-
-bottom:-60px;
-right:-60px;
-
-border-radius:50%;
-
+html{
+    scroll-behavior:smooth;
 }
 
-/*=====================================
-ENVELOPE
-=====================================*/
-
-.envelope-wrapper{
-
-position:relative;
-
-z-index:5;
-
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fff8ed;
+    color:#4b2b20;
+    overflow-x:hidden;
 }
 
-.envelope{
 
-position:relative;
+/* ---------- Opening Screen ---------- */
 
-width:340px;
-
-height:230px;
-
-cursor:pointer;
-
-transition:.6s;
-
+.loader-screen{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(135deg,#7b1e1e,#d4af37);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:hideLoader 3s forwards;
 }
 
-.envelope:hover{
-
-transform:translateY(-10px);
-
+.loader-text{
+    color:white;
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    animation:pulse 1.5s infinite;
 }
-
-.envelope-body{
-
-position:absolute;
-
-bottom:0;
-
-width:100%;
-
-height:170px;
-
-background:#fffdf9;
-
-border-radius:0 0 14px 14px;
-
-box-shadow:0 25px 45px rgba(0,0,0,.18);
-
-}
-
-.envelope-top{
-
-position:absolute;
-
-width:100%;
-
-height:170px;
-
-background:#efe2cf;
-
-clip-path:polygon(0 0,50% 65%,100% 0);
-
-transform-origin:top;
-
-transition:1s;
-
-}
-
-.wax-seal{
-
-position:absolute;
-
-left:50%;
-
-top:100px;
-
-transform:translateX(-50%);
-
-width:82px;
-
-height:82px;
-
-border-radius:50%;
-
-background:var(--maroon);
-
-border:5px solid var(--gold);
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:4px;
-
-color:var(--gold);
-
-font-weight:bold;
-
-font-size:20px;
-
-box-shadow:0 0 25px rgba(212,175,55,.35);
-
-z-index:10;
-
-}
-
-.tap-text{
-
-position:absolute;
-
-bottom:-45px;
-
-width:100%;
-
-text-align:center;
-
-letter-spacing:4px;
-
-text-transform:uppercase;
-
-font-size:13px;
-
-color:var(--maroon);
-
-animation:pulse 2s infinite;
-
-}
-
-/*=====================================
-BOOK
-=====================================*/
-
-#book{
-
-display:none;
-
-background:#efe6d8;
-
-}
-
-.book{
-
-width:340px;
-
-max-width:90%;
-
-perspective:1200px;
-
-}
-
-.book-cover{
-
-background:linear-gradient(145deg,#6d1126,#8b1834);
-
-border:3px solid var(--gold);
-
-border-radius:16px;
-
-padding:50px 30px;
-
-text-align:center;
-
-color:white;
-
-box-shadow:0 25px 50px rgba(0,0,0,.25);
-
-}
-
-.book-cover h4{
-
-letter-spacing:4px;
-
-text-transform:uppercase;
-
-color:var(--gold);
-
-margin-bottom:20px;
-
-}
-
-.book-cover h1{
-
-font-family:'Cinzel',serif;
-
-font-size:38px;
-
-line-height:1.4;
-
-}
-
-.book-cover span{
-
-color:var(--gold);
-
-}
-
-.book-cover p{
-
-margin-top:25px;
-
-font-size:18px;
-
-letter-spacing:2px;
-
-}
-
-.book-page{
-
-margin-top:20px;
-
-background:white;
-
-padding:40px;
-
-border-radius:0 0 12px 12px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.12);
-
-text-align:center;
-
-display:none;
-
-}
-
-.book-page h2{
-
-font-family:'Cinzel',serif;
-
-margin-bottom:20px;
-
-color:var(--maroon);
-
-}
-
-.book-page p{
-
-font-size:18px;
-
-line-height:1.8;
-
-}
-
-/*=====================================
-ANIMATIONS
-=====================================*/
 
 @keyframes pulse{
-
-0%,100%{
-
-opacity:.5;
-
+    50%{
+        transform:scale(1.1);
+    }
 }
 
-50%{
-
-opacity:1;
-
+@keyframes hideLoader{
+    0%,80%{
+        opacity:1;
+        visibility:visible;
+    }
+    100%{
+        opacity:0;
+        visibility:hidden;
+    }
 }
 
+
+/* ---------- Petals ---------- */
+
+.petal{
+    position:fixed;
+    top:-10%;
+    font-size:25px;
+    animation:fall linear infinite;
+    z-index:10;
 }
 
-@keyframes goldGlow{
-
-0%,100%{
-
-transform:scale(1);
-
+@keyframes fall{
+    from{
+        transform:translateY(-100px) rotate(0deg);
+    }
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
 }
 
-50%{
 
-transform:scale(1.15);
+/* ---------- Hero Section ---------- */
 
-}
-
-}
-/*=====================================
-PHOTO SECTIONS
-=====================================*/
-
-.photo-section{
-    background:var(--cream);
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
+    padding:30px;
+    background:
+    linear-gradient(rgba(255,248,237,.7),rgba(255,248,237,.8)),
+    url("background.jpg");
+    background-size:cover;
+    background-position:center;
 }
 
-.photo-frame{
-    width:320px;
-    max-width:90%;
-    background:white;
-    padding:15px;
-    border-radius:18px;
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-}
 
-.photo-frame img{
-    width:100%;
-    display:block;
-    border-radius:12px;
-}
-
-.photo-text{
-    margin-top:35px;
+.invitation-card{
     max-width:600px;
+    padding:45px 30px;
+    border-radius:25px;
+    background:rgba(255,255,255,.85);
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    border:2px solid #d4af37;
+    animation:zoom 1.5s;
 }
 
-.photo-text h2{
-    font-family:'Cinzel',serif;
-    color:var(--maroon);
-    margin-bottom:15px;
+
+@keyframes zoom{
+    from{
+        transform:scale(.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
 }
 
-.photo-text p{
+
+.small-title{
+    font-size:20px;
+    letter-spacing:3px;
+    color:#8b4513;
+}
+
+
+.names{
+    margin:25px 0;
+}
+
+.names h1{
+    font-family:'Great Vibes',cursive;
+    font-size:75px;
+    color:#9b1c31;
+    line-height:1.2;
+}
+
+
+.and{
+    font-family:'Cinzel';
+    font-size:25px;
+    color:#d4af37;
+}
+
+
+.details{
+    margin-top:25px;
     font-size:18px;
-    line-height:1.8;
 }
 
-/*=====================================
-DETAILS
-=====================================*/
 
-#details{
-    background:#f6efe5;
+.details strong{
+    color:#9b1c31;
 }
 
-#details h1,
-#venue h1,
-#thankyou h1{
-    font-family:'Cinzel',serif;
-    color:var(--maroon);
-    margin-bottom:30px;
-    font-size:42px;
-}
 
-.details-card,
-.venue-card,
-.thankyou-card{
+/* ---------- Sections ---------- */
 
-    width:360px;
-    max-width:92%;
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:18px;
-
+section{
+    padding:70px 20px;
     text-align:center;
+}
 
-    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+.section-title{
+    font-family:'Cinzel',serif;
+    font-size:35px;
+    margin-bottom:30px;
+    color:#8b4513;
+}
+
+
+/* ---------- Story Book ---------- */
+
+.story{
+    background:#fff0d9;
+}
+
+
+.story-box{
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    line-height:2;
+}
+
+
+/* ---------- Venue ---------- */
+
+.venue{
+    background:#fff8ed;
+}
+
+
+.map-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#9b1c31;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+
+.map-btn:hover{
+    background:#d4af37;
+    color:#4b2b20;
+}
+
+
+/* ---------- Countdown ---------- */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+.time-box{
+    width:100px;
+    padding:20px;
+    background:#9b1c31;
+    color:white;
+    border-radius:15px;
+}
+
+
+.time-box span{
+    display:block;
+    font-size:35px;
+    font-weight:bold;
+}
+
+
+/* ---------- Gallery ---------- */
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+
+.gallery img{
+    width:280px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+
+/* ---------- Footer ---------- */
+
+footer{
+    background:#4b2b20;
+    color:white;
+    padding:30px;
+    text-align:center;
+    font-size:16px;
+}
+
+
+/* ---------- Mobile Responsive ---------- */
+
+@media(max-width:600px){
+
+    .loader-text{
+        font-size:40px;
+    }
+
+    .names h1{
+        font-size:55px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .invitation-card{
+        padding:30px 15px;
+    }
+
+    .details{
+        font-size:16px;
+    }
+
+}
+/* =================================
+   Bhuvaneshwari ❤️ Thyagu Reception
+   JavaScript
+================================= */
+
+
+// ---------- Falling Petals ----------
+
+function createPetal(){
+
+    const petal = document.createElement("div");
+
+    petal.className = "petal";
+    petal.innerHTML = "🌸";
+
+    petal.style.left = Math.random() * 100 + "vw";
+    petal.style.animationDuration =
+        (Math.random() * 5 + 5) + "s";
+
+    petal.style.fontSize =
+        (Math.random() * 20 + 15) + "px";
+
+    document.body.appendChild(petal);
+
+
+    setTimeout(()=>{
+        petal.remove();
+    },10000);
 
 }
 
-.details-card p{
-    color:#777;
-    margin-top:15px;
-}
 
-.details-card h3{
-    margin-bottom:20px;
-    color:var(--maroon);
-}
+setInterval(createPetal,500);
 
-/*=====================================
-VENUE
-=====================================*/
 
-#venue{
-    background:#faf6ef;
-}
 
-.location-btn{
+// ---------- Countdown Timer ----------
 
-display:inline-block;
+const weddingDate =
+new Date("August 30, 2026 13:30:00").getTime();
 
-margin-top:30px;
 
-padding:14px 30px;
+function countdown(){
 
-background:var(--maroon);
+    const now = new Date().getTime();
 
-color:white;
+    const distance = weddingDate - now;
 
-text-decoration:none;
 
-border-radius:40px;
+    if(distance < 0){
 
-transition:.4s;
+        document.getElementById("countdown")
+        .innerHTML =
+        "<h2>The Celebration Has Begun ❤️</h2>";
 
-}
+        return;
 
-.location-btn:hover{
+    }
 
-background:var(--gold);
 
-color:black;
+    let days =
+    Math.floor(distance/(1000*60*60*24));
 
-}
 
-/*=====================================
-THANK YOU
-=====================================*/
+    let hours =
+    Math.floor(
+        (distance%(1000*60*60*24))
+        /(1000*60*60)
+    );
 
-#thankyou{
-    background:#f3e7d7;
-}
 
-.thankyou-card h2{
+    let minutes =
+    Math.floor(
+        (distance%(1000*60*60))
+        /(1000*60)
+    );
 
-margin-top:25px;
 
-font-family:'Cormorant Garamond',serif;
+    let seconds =
+    Math.floor(
+        (distance%(1000*60))
+        /1000
+    );
 
-font-size:32px;
 
-color:var(--maroon);
 
-}
+    document.getElementById("days").innerHTML =
+    days;
 
-.couple-sign{
 
-margin-top:40px;
+    document.getElementById("hours").innerHTML =
+    hours;
 
-font-size:22px;
 
-font-weight:600;
+    document.getElementById("minutes").innerHTML =
+    minutes;
 
-color:var(--gold);
+
+    document.getElementById("seconds").innerHTML =
+    seconds;
 
 }
 
-/*=====================================
-MUSIC BUTTON
-=====================================*/
 
-#music-btn{
+setInterval(countdown,1000);
 
-position:fixed;
+countdown();
 
-bottom:20px;
 
-right:20px;
 
-width:60px;
+// ---------- Smooth Scroll ----------
 
-height:60px;
+document.querySelectorAll("a").forEach(link=>{
 
-border:none;
+    link.addEventListener("click",function(e){
 
-border-radius:50%;
+        let target =
+        document.querySelector(
+            this.getAttribute("href")
+        );
 
-background:var(--maroon);
 
-color:white;
+        if(target){
 
-font-size:22px;
+            e.preventDefault();
 
-cursor:pointer;
+            target.scrollIntoView({
+                behavior:"smooth"
+            });
 
-box-shadow:0 10px 25px rgba(0,0,0,.2);
+        }
 
-z-index:999;
+    });
 
-}
+});
 
-/*=====================================
-MOBILE
-=====================================*/
 
-@media(max-width:768px){
 
-.loader-name{
-font-size:34px;
-}
+// ---------- Welcome Message ----------
 
-.book-cover h1{
-font-size:28px;
-}
+window.onload = ()=>{
 
-#details h1,
-#venue h1,
-#thankyou h1{
-font-size:34px;
-}
+    setTimeout(()=>{
 
-.envelope{
-width:300px;
-height:205px;
-}
+        console.log(
+        "Welcome to Bhuvaneshwari ❤️ Thyagu Reception"
+        );
 
-.envelope-body{
-height:150px;
-}
+    },3000);
 
-.envelope-top{
-height:150px;
-}
-
-.wax-seal{
-width:70px;
-height:70px;
-top:88px;
-font-size:18px;
-}
-
-}
+};
