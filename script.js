@@ -140,5 +140,38 @@ if (openingEnvelope) {
         });
 
     }
+/* ==========================
+   GOLD PARTICLES
+========================== */
 
+function createGoldParticle(){
+
+    const particle =
+    document.createElement("div");
+
+    particle.className =
+    "gold-particle";
+
+    particle.innerHTML="✦";
+
+    particle.style.left =
+    Math.random()*100+"vw";
+
+    particle.style.animationDuration =
+    (Math.random()*5+5)+"s";
+
+
+    document.body.appendChild(particle);
+
+
+    setTimeout(()=>{
+
+        particle.remove();
+
+    },10000);
+
+}
+
+
+setInterval(createGoldParticle,700);
 });
