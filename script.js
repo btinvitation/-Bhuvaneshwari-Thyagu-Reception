@@ -122,7 +122,21 @@ document.addEventListener("DOMContentLoaded", () => {
         musicBtn.addEventListener("click", () => {
 
             alert("🎵 Background music will be added soon.");
+/* ==========================
+   AUTO HIDE ENVELOPE
+========================== */
 
+const openingEnvelope = document.getElementById("envelope");
+
+if (openingEnvelope) {
+
+    setTimeout(() => {
+
+        openingEnvelope.style.display = "none";
+
+    }, 4000);
+
+}
         });
 
     }
